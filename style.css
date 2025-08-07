@@ -1,0 +1,32 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100dvh;
+    background-color: hsl(30, 38%, 92%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.card_perfume{
+    width: 60%;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.192);
+}
+.img_perfume{
+    background: url(images/image-product-mobile.jpg);
+    background-position: bottom;
+    background-size: cover;
+    border-radius: 10px 10px 0 0;
+    height: 250px;
+    width: 100%;
+    
+}
+.conteudo_perfume{
+    padding: 20px;
+}
