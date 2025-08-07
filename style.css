@@ -1,4 +1,5 @@
 
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 *{
     margin: 0;
     padding: 0;
@@ -10,10 +11,12 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-
+    font-family: 'Montserrat';
+    color: hsl(228, 12%, 48%);
 }
 .card_perfume{
     width: 60%;
+    max-width: 350px;
     background-color: white;
     border-radius: 10px;
     box-shadow: 0 0 6px rgba(0, 0, 0, 0.192);
@@ -24,9 +27,80 @@ body{
     background-size: cover;
     border-radius: 10px 10px 0 0;
     height: 250px;
-    width: 100%;
-    
+    width: 100%;  
 }
 .conteudo_perfume{
     padding: 20px;
+}
+.produto{
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-size: 13px;
+    font-weight: 500;
+    padding-bottom: 10px;
+}
+.titulo_perfume{
+    font-family: 'Fraunces';
+    font-size: 1.8em;
+    color: hsl(212, 21%, 14%);
+    padding-bottom: 10px;
+}
+.descricao_perfume{
+    line-height: 1.5em;
+    font-size: 13px;
+    padding-bottom: 10px;
+}
+.preco_perfume{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    padding-bottom: 10px;
+}
+.preco_perfume h2{
+    color: hsl(158, 36%, 37%);
+    font-family: 'Fraunces';
+}
+.preco_perfume p{
+    font-size: 12px;
+}
+.botao{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    color: white;
+    padding: 15px;
+    background-color: hsl(158, 36%, 37%);
+    border: none;
+    border-radius: 10px;
+    width: 100%;
+    
+}
+.botao:hover{
+    scale: 1.1;
+    background-color: hsl(158, 42%, 18%);
+    
+}
+
+@media (min-width: 785px) {
+    .card_perfume{
+        max-width: 584px;
+        display: flex;
+    }
+    .img_perfume{
+        background: url(images/image-product-desktop.jpg);
+        background-position: center;
+        background-size: cover;
+        border-radius: 10px 0px 0px 10px;
+        width: 50%;
+        height: 380px;
+    }
+    .conteudo_perfume{
+        width: 50%;
+        max-width: 280px;
+        height: 100%;
+    }
+    .preco_perfume{
+        margin: 10px 0;
+    }
 }
